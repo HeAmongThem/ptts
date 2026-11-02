@@ -1,0 +1,8 @@
+from typing import Any
+repoBusinessUnits : list[dict[str, Any]] = [
+    {"id": 1, "name": "BU Retail"},
+    {"id": 2, "name": "BU Corporate"},
+    {"id": 3, "name": "BU Digital"},
+    {"id": 4, "name": "BU International"},
+    {"id": 5, "name": "BU Services"},
+]

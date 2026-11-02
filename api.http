@@ -1,0 +1,23 @@
+### Fetch repos
+POST http://127.0.0.1:8778/api/run
+Content-Type: application/json
+
+{
+    "command": "fetch",
+    "repo_name": "all"
+}
+
+
+### Fetch token
+POST http://127.0.0.1:8778/api/get_token
+Content-Type: application/json
+
+{
+    "secret": "un_client_secret"
+}
+
+### 
+POST http://127.0.0.1:8778/api/run
+Content-Type:  application/json
+
+{ "command" : "fetch", "repo_name" : "repoIndicators" }
