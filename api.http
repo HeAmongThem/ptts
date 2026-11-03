@@ -16,8 +16,59 @@ Content-Type: application/json
     "secret": "un_client_secret"
 }
 
-### 
+
+
+
+### GET REPOS repoBusinessUnits
+POST http://127.0.0.1:8778/api/run
+Content-Type:  application/json
+
+{ "command" : "fetch", "repo_name" : "repoBusinessUnits" }
+
+
+### GET REPOS repoCategories
+POST http://127.0.0.1:8778/api/run
+Content-Type:  application/json
+
+{ "command" : "fetch", "repo_name" : "repoCategories" }
+
+
+### GET REPOS repoUsers
+POST http://127.0.0.1:8778/api/run
+Content-Type:  application/json
+
+{ "command" : "fetch", "repo_name" : "repoUsers" }
+
+
+### GET REPOS repoIndicators
 POST http://127.0.0.1:8778/api/run
 Content-Type:  application/json
 
 { "command" : "fetch", "repo_name" : "repoIndicators" }
+
+
+### GET REPOS repoCampaigns
+POST http://127.0.0.1:8778/api/run
+Content-Type:  application/json
+
+{ "command" : "fetch", "repo_name" : "repoCampaigns" }
+
+
+### GET REPOS repoCampaignIndicators
+POST http://127.0.0.1:8778/api/run
+Content-Type:  application/json
+
+{ "command" : "fetch", "repo_name" : "repoCampaignIndicators" }
+
+
+### GET REPOS repoIndicatorAudits
+POST http://127.0.0.1:8778/api/run
+Content-Type:  application/json
+
+{ "command" : "fetch", "repo_name" : "repoIndicatorAudits" }
+
+### GET REPOS repoSettings
+POST http://127.0.0.1:8778/api/run
+Content-Type:  application/json
+
+{ "command" : "fetch", "repo_name" : "repoSettings" }

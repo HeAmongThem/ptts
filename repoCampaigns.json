@@ -1,0 +1,30 @@
+[
+    {
+        "id": 1,
+        "name": "Campagne T1 2026",
+        "start_date": "2026-01-01T00:00:00",
+        "end_date": "2026-03-31T00:00:00",
+        "actif": "false"
+    },
+    {
+        "id": 2,
+        "name": "Campagne T2 2026",
+        "start_date": "2026-04-01T00:00:00",
+        "end_date": "2026-06-30T00:00:00",
+        "actif": "false"
+    },
+    {
+        "id": 3,
+        "name": "Campagne T3 2026",
+        "start_date": "2026-07-01T00:00:00",
+        "end_date": "2026-09-30T00:00:00",
+        "actif": "false"
+    },
+    {
+        "id": 4,
+        "name": "Campagne T4 2026",
+        "start_date": "2026-10-01T00:00:00",
+        "end_date": "2026-12-31T00:00:00",
+        "actif": "true"
+    }
+]

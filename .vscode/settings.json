@@ -1,0 +1,8 @@
+{
+    "chat.tools.terminal.autoApprove": {
+        "/^python3 -c \"\nimport copy, ast, sys\nsrc = open\\('dataset\\.py'\\)\\.read\\(\\)\ntree = ast\\.parse\\(src\\)\nfuncs = \\[n for n in tree\\.body if isinstance\\(n, ast\\.FunctionDef\\) and n\\.name in \\('_create','_update','_delete'\\)\\]\nns = \\{'Any': object\\}\nexec\\(compile\\(ast\\.Module\\(body=\\[ast\\.fix_missing_locations\\(f\\) for f in funcs\\], type_ignores=\\[\\]\\), 'x', 'exec'\\), ns\\)\nfrom repo import repoCampaigns\nrepo = copy\\.deepcopy\\(repoCampaigns\\)\nc = ns\\['_create'\\]\\(repo, \\{'name': 'Test', 'start_date': 'x', 'end_date': 'y', 'actif': 'false'\\}\\)\nassert c\\['id'\\] == 5 and len\\(repo\\) == 5\nu = ns\\['_update'\\]\\(repo, \\{'id': 5, 'actif': 'true'\\}\\)\nassert u\\['name'\\] == 'Test' and u\\['actif'\\] == 'true'\nd = ns\\['_delete'\\]\\(repo, 5\\)\nassert d\\['id'\\] == 5 and len\\(repo\\) == 4\ntry:\n    ns\\['_delete'\\]\\(repo, 99\\); raise SystemExit\\('no error'\\)\nexcept KeyError as e: print\\('KeyError ok:', e\\)\ntry:\n    ns\\['_update'\\]\\(repo, \\{'id': 99\\}\\); raise SystemExit\\('no error'\\)\nexcept KeyError as e: print\\('KeyError ok:', e\\)\nprint\\('all checks passed'\\)\n\"$/": {
+            "approve": true,
+            "matchCommandLine": true
+        }
+    }
+}
